@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Q&amp;A — LexHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html">⚖️ LexHub</a>
+      <nav class="navbar__links">
+        <a class="navbar__link active" href="chat.html">Chat</a>
+        <a class="navbar__link" href="contract.html">Contract</a>
+        <a class="navbar__link" href="summarizer.html">Summarize</a>
+        <a class="navbar__link" href="about.html">About</a>
+      </nav>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="chat-page">
+    <aside class="chat-sidebar">
+      <div class="chat-sidebar__brand">⚖️ LexHub</div>
+      <p class="chat-sidebar__desc">
+        Ask any legal question in plain English. Answers are grounded in Indian law — IPC, CrPC, and the Constitution.
+      </p>
+
+      <div class="suggested-questions">
+        <p class="suggested-questions__title">Try asking</p>
+        <button class="suggested-question">What is Section 498A?</button>
+        <button class="suggested-question">What is bail and how to get it?</button>
+        <button class="suggested-question">What are my rights as a tenant?</button>
+        <button class="suggested-question">How do I file a consumer complaint?</button>
+        <button class="suggested-question">What is the punishment for theft?</button>
+      </div>
+
+      <div class="sidebar-nalsa">
+        📞 Free Legal Aid: <a href="https://nalsa.gov.in" target="_blank" rel="noopener">15100</a> (NALSA)
+      </div>
+    </aside>
+
+    <section class="chat-panel">
+      <div class="chat-panel__header">
+        <h2>Legal Q&amp;A</h2>
+        <button class="chat-clear-btn" id="clearChatBtn">Clear chat</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+      <div class="chat-input-area">
+        <div class="chat-input-row">
+          <textarea
+            id="chatInput"
+            class="chat-input"
+            rows="1"
+            maxlength="500"
+            placeholder="Type your legal question..."
+            aria-label="Type your legal question"
+          ></textarea>
+          <button class="btn btn--primary chat-send-btn" id="sendBtn">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send
+          </button>
+        </div>
+        <div class="chat-input-meta">
+          <span>Press Enter to send · Shift+Enter for new line</span>
+          <span class="chat-char-counter" id="charCounter">0 / 500</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">⚖️ LexHub</div>
+        <p class="footer__tagline">Know your rights. Not legal advice.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="chat.html">Legal Q&amp;A</a>
+        <a href="contract.html">Contract Analyzer</a>
+        <a href="summarizer.html">Document Summarizer</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer__nalsa">
+        <p>📞 Free Legal Aid (NALSA): <a href="https://nalsa.gov.in" target="_blank" rel="noopener">15100</a></p>
+        <p>Built by Piyush Kadam ·
+          <a href="https://github.com/virtualpiyu" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Not a law firm. Not legal advice. Built by Piyush Kadam, Pune.
+    </div>
+  </footer>
+
+  <a class="nalsa-widget" href="https://nalsa.gov.in" target="_blank" rel="noopener">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Free Legal Aid: 15100
+  </a>
+
+  <script src="js/utils.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

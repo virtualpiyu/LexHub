@@ -1,0 +1,7 @@
+.env
+lexhub_env/
+__pycache__/
+*.pyc
+*.pkl
+vector_store/
+data/raw/

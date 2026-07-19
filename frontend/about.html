@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About &amp; Disclaimer — LexHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .about-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: var(--space-4) var(--space-3) var(--space-8);
+    }
+    .about-content section {
+      margin-bottom: var(--space-6);
+    }
+    .about-content h1 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-3);
+      text-align: center;
+    }
+    .about-content h2 {
+      font-size: var(--text-xl);
+      color: var(--accent-gold);
+      margin-bottom: var(--space-2);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: var(--space-1);
+    }
+    .about-content p {
+      color: var(--text-secondary);
+      margin-bottom: var(--space-2);
+      line-height: 1.7;
+    }
+    .about-content ul {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      margin-bottom: var(--space-2);
+    }
+    .about-list--no li {
+      color: var(--text-secondary);
+    }
+    .about-list--no li::before {
+      content: "✗ ";
+      color: var(--illegal-red);
+      font-weight: 700;
+    }
+    .about-feature {
+      display: flex;
+      gap: var(--space-2);
+      margin-bottom: var(--space-2);
+    }
+    .about-feature__icon {
+      font-size: var(--text-xl);
+    }
+    .about-feature h3 {
+      font-size: var(--text-base);
+      margin-bottom: 4px;
+    }
+    .about-feature p {
+      margin-bottom: 0;
+      font-size: var(--text-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html">⚖️ LexHub</a>
+      <nav class="navbar__links">
+        <a class="navbar__link" href="chat.html">Chat</a>
+        <a class="navbar__link" href="contract.html">Contract</a>
+        <a class="navbar__link" href="summarizer.html">Summarize</a>
+        <a class="navbar__link active" href="about.html">About</a>
+      </nav>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="about-content">
+    <h1>About LexHub</h1>
+
+    <section>
+      <h2>Why We Built LexHub</h2>
+      <p>
+        Millions of Indians face legal questions every day — as tenants, employees, consumers, or
+        first-time contract signers — but rarely know where to start. Licensed legal help isn't always
+        nearby, affordable, or fast. LexHub exists to close that first gap: helping people understand
+        the basics of Indian law in plain language, so they can walk into a lawyer's office, a police
+        station, or a negotiation already informed.
+      </p>
+    </section>
+
+    <section>
+      <h2>What LexHub Does</h2>
+      <div class="about-feature">
+        <span class="about-feature__icon">💬</span>
+        <div>
+          <h3>Legal Q&amp;A</h3>
+          <p>Answers legal questions in plain English, grounded in the IPC, CrPC, and the Constitution.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <span class="about-feature__icon">📄</span>
+        <div>
+          <h3>Contract Analyzer</h3>
+          <p>Reviews contracts clause by clause and flags risky or potentially illegal language.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <span class="about-feature__icon">📋</span>
+        <div>
+          <h3>Document Summarizer</h3>
+          <p>Turns dense legal documents — FIRs, notices, judgments — into simple summaries with next steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What LexHub Does NOT Do</h2>
+      <ul class="about-list--no">
+        <li>Give legal advice specific to your case</li>
+        <li>Predict court outcomes or case results</li>
+        <li>Replace a licensed Advocate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Terms of Use</h2>
+      <p>
+        By using LexHub, you agree that it is an informational tool, not a substitute for professional
+        legal counsel. LexHub's responses are generated using AI models and public legal reference
+        material, and may occasionally be incomplete, outdated, or incorrect. You should independently
+        verify any information before relying on it, and should always consult a licensed Advocate for
+        matters specific to your situation.
+      </p>
+      <p>
+        LexHub does not create an attorney-client relationship of any kind. Documents you upload are
+        processed solely to generate the requested analysis or summary and are not reviewed by a human
+        lawyer. You are responsible for ensuring you have the right to upload and share any document
+        you submit.
+      </p>
+      <p>
+        LexHub, its creator, and any affiliated parties are not liable for decisions made based on
+        information provided by this tool. Use of LexHub is entirely at your own discretion and risk.
+      </p>
+    </section>
+
+    <section>
+      <h2>Full Disclaimer</h2>
+      <p>
+        LexHub provides legal information only — it does not provide legal advice, does not predict
+        court outcomes, and is not a replacement for a licensed Advocate. Every answer, contract
+        analysis, and document summary generated by LexHub should be treated as a starting point for
+        understanding, not a final word. Laws referenced may change, and interpretations can vary by
+        jurisdiction and circumstance. Always consult a qualified legal professional before making
+        decisions that affect your rights, finances, or legal standing.
+      </p>
+    </section>
+
+    <section>
+      <h2>Free Legal Aid in India</h2>
+      <p>
+        If you need real legal assistance, India's National Legal Services Authority (NALSA) and the
+        District Legal Services Authorities (DLSA) provide free legal aid to eligible citizens,
+        including women, children, SC/ST communities, industrial workmen, and persons with low income.
+      </p>
+      <p>
+        📞 NALSA Helpline: <strong>15100</strong> ·
+        <a href="https://nalsa.gov.in" target="_blank" rel="noopener" style="color: var(--accent-gold);">nalsa.gov.in</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Built By</h2>
+      <p>
+        LexHub is built by Piyush Kadam, an AI &amp; Data Science engineer based in Pune, India.
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/virtualpiyu" target="_blank" rel="noopener" style="color: var(--accent-gold);">github.com/virtualpiyu</a>
+      </p>
+    </section>
+
+    <div class="disclaimer">
+      <i class="fa-solid fa-triangle-exclamation disclaimer__icon" aria-hidden="true"></i>
+      <span>This is legal information only, not legal advice. Always consult a licensed Advocate for advice specific to your situation.</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">⚖️ LexHub</div>
+        <p class="footer__tagline">Know your rights. Not legal advice.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="chat.html">Legal Q&amp;A</a>
+        <a href="contract.html">Contract Analyzer</a>
+        <a href="summarizer.html">Document Summarizer</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer__nalsa">
+        <p>📞 Free Legal Aid (NALSA): <a href="https://nalsa.gov.in" target="_blank" rel="noopener">15100</a></p>
+        <p>Built by Piyush Kadam ·
+          <a href="https://github.com/virtualpiyu" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Not a law firm. Not legal advice. Built by Piyush Kadam, Pune.
+    </div>
+  </footer>
+
+  <a class="nalsa-widget" href="https://nalsa.gov.in" target="_blank" rel="noopener">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Free Legal Aid: 15100
+  </a>
+
+  <script src="js/utils.js"></script>
+</body>
+</html>

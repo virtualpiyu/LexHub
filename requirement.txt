@@ -1,0 +1,21 @@
+pip install 
+langchain 
+langchain-community 
+langchain-groq 
+faiss-cpu 
+sentence-transformers 
+pdfplumber 
+pymupdf 
+fastapi 
+uvicorn 
+python-multipart 
+xgboost 
+scikit-learn 
+pandas 
+numpy 
+joblib 
+python-dotenv 
+tiktoken 
+tqdm 
+groq 
+httpx

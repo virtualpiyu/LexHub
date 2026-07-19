@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LexHub — AI Legal Aid for India</title>
+  <meta name="description" content="Free legal information for every Indian citizen. Ask legal questions, analyze contracts, and summarize legal documents in plain English." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html">⚖️ LexHub</a>
+      <nav class="navbar__links">
+        <a class="navbar__link" href="chat.html">Chat</a>
+        <a class="navbar__link" href="contract.html">Contract</a>
+        <a class="navbar__link" href="summarizer.html">Summarize</a>
+        <a class="navbar__link" href="about.html">About</a>
+      </nav>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <svg class="hero__bg" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g stroke="#C9A84C" stroke-width="1.5" fill="none" opacity="0.6">
+          <line x1="400" y1="40" x2="400" y2="320" />
+          <line x1="220" y1="120" x2="580" y2="120" />
+          <line x1="220" y1="120" x2="180" y2="220" />
+          <line x1="220" y1="120" x2="260" y2="220" />
+          <line x1="580" y1="120" x2="540" y2="220" />
+          <line x1="580" y1="120" x2="620" y2="220" />
+          <path d="M180 220 A40 40 0 0 0 260 220" />
+          <path d="M540 220 A40 40 0 0 0 620 220" />
+          <line x1="340" y1="320" x2="460" y2="320" />
+        </g>
+      </svg>
+      <div class="hero__content">
+        <h1 class="hero__heading">Know Your <span>Rights.</span></h1>
+        <p class="hero__subheading">
+          Free legal information for every Indian citizen. Powered by AI, grounded in Indian law.
+        </p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="chat.html">Ask a Legal Question →</a>
+          <a class="btn btn--outline" href="contract.html">Analyze a Contract →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="feature-card">
+        <div class="feature-card__icon">💬</div>
+        <h2 class="feature-card__title">Legal Q&amp;A</h2>
+        <p class="feature-card__text">
+          Ask any legal question. Get plain English answers from IPC, CrPC, Constitution and more.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">📄</div>
+        <h2 class="feature-card__title">Contract Analyzer</h2>
+        <p class="feature-card__text">
+          Upload any contract. Get clause-by-clause risk analysis before you sign.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">📋</div>
+        <h2 class="feature-card__title">Document Summarizer</h2>
+        <p class="feature-card__text">
+          Upload any legal document. Get a simple summary and action steps.
+        </p>
+      </article>
+    </section>
+
+    <section class="banner">
+      <div class="disclaimer">
+        <i class="fa-solid fa-triangle-exclamation disclaimer__icon" aria-hidden="true"></i>
+        <span>LexHub provides legal information only. Not legal advice. Not court outcome predictions. Always consult a licensed Advocate for advice specific to your case.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">⚖️ LexHub</div>
+        <p class="footer__tagline">Know your rights. Not legal advice.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="chat.html">Legal Q&amp;A</a>
+        <a href="contract.html">Contract Analyzer</a>
+        <a href="summarizer.html">Document Summarizer</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer__nalsa">
+        <p>📞 Free Legal Aid (NALSA): <a href="https://nalsa.gov.in" target="_blank" rel="noopener">15100</a></p>
+        <p>Built by Piyush Kadam ·
+          <a href="https://github.com/virtualpiyu" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Not a law firm. Not legal advice. Built by Piyush Kadam, Pune.
+    </div>
+  </footer>
+
+  <a class="nalsa-widget" href="https://nalsa.gov.in" target="_blank" rel="noopener">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Free Legal Aid: 15100
+  </a>
+
+  <script src="js/utils.js"></script>
+  <script>
+    document.querySelectorAll('.navbar__link').forEach(link => {
+      if (link.getAttribute('href') === location.pathname.split('/').pop()) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
